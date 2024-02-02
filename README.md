@@ -14,8 +14,12 @@ Or using **[Docker](https://www.docker.com/) (Recomended)**
 ### Starting dev environment
 
 - There are 2 ways that this can be achieved:
+
   - Using `cargo build` and `cargo run` in sequence
-  - **(Recomended)** using `cargo watch` to enable live reload of the APP and on development testing. Run the following: `cargo watch -q -c -w src/ -x run` for just the live-reload or `cargo watch -q -c -w src/ -x check -x test -x run` to enable testing too
+  - **(Recomended)** using `cargo watch` to enable live reload of the APP and on development testing. Run the following: `cargo watch -q -c -x "run -q --example <EXAMPLE_NAME>"` for just the live-reload.
+
+- You may execute each example isolated:
+  - `cargo run -q --example <EXAMPLE_NAME>`
 
 ### Starting AI Model
 
