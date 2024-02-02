@@ -7,7 +7,7 @@ authors = ["Mateus Barbosa <barbosamat16@gmail.com>"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-derive_more = { version = "0.99.17", features = ["From"] }
+derive_more = { version = "0.99.17", features = ["from"] }
 tokio = { version = "1.36.0", features = ["full"] }
 futures = "0.3.30"
 ollama-rs = "0.1.6"
