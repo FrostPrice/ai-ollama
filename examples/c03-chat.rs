@@ -9,7 +9,7 @@ use tokio::io::AsyncWriteExt;
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    println!("Ollama API Example: Context (c02-context.rs)\n");
+    println!("Ollama API Example: Context (c03-chat.rs)\n");
 
     // By default access localhost:11434
     let ollama = Ollama::default();
