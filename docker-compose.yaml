@@ -9,11 +9,12 @@ services:
     volumes:
       - ./ollama-data:/root/.ollama # This may be better to be created as an docker volume instead of a bind mount
 
+
     # * Uncomment the following lines to enable GPU support
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: "nvidia" # or "mesa" for intel and amd gpus
-              count: all # or a specific number of gpus
-              capabilities: ["gpu"]
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: "nvidia" # or "mesa" for intel and amd gpus
+    #           count: all # or a specific number of gpus
+    #           capabilities: ["gpu"]
